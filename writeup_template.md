@@ -1,12 +1,9 @@
-#**Behavioral Cloning** 
 
-##Writeup Template
+**Video Summary**
+Watch this video for the final outcome of this project! 
+https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/run2.mp4
 
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Behavioral Cloning Project**
+**The Project**
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior

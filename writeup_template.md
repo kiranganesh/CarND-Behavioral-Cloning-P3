@@ -68,7 +68,7 @@ The images were cropped 70 pixels from the top, and 25 pixels from the bottom to
 
 ##Preprocessing - Steering Angles
 
-T
+A steering angle of 0.5 from the training run doesnt mean that a value of 0.49 or 0.52 is "incorrect" - probably they all can still do the required job done. So I added a random variation of +/- 10% to the steering angles. This makes the model more general and helps to reduce overfitting to precise values from the training set. 
 
 
 

@@ -78,7 +78,7 @@ Inorder to reduce the bias to left turns, all images were flipped (as well as th
 
 After the above mentioned steps, the distribution of data looks like this
 
-![Image](./images/pic1)
+![Image](https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/images/pic1.JPG)
 
 ####1. Submission includes all required files and can be used to run the simulator in autonomous mode
 

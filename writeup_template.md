@@ -1,11 +1,11 @@
 
-**Video Summary**
+##Video Summary
 
 Watch this video for the final outcome of this project! 
 
 https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/run2.mp4
 
-**The Project**
+##The Project
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
@@ -13,6 +13,10 @@ The goals / steps of this project are the following:
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
+
+##Files
+
+The main files for this submission are model.py, model.h5, run2.mp4 and writeup_template.md
 
 
 [//]: # (Image References)

@@ -94,7 +94,11 @@ The model did not work well on Track2. One obvious enhancement that I need to ma
 
 ##Commentary
 
-It was immensely satisfying to build a simple deep learning model that could drive the simulator car on its own. Its a really different paradigm (versus the robotic model) that showcases the power of deep learning. Keras makes the construction of the model extremely simple, putting the programmer focus on the model intuition itself. And it is all about the data. Garbage in, garbage out. 
+It was immensely satisfying to build a simple deep learning model that could drive the simulator car on its own. Its a really different paradigm (versus the robotic model) that showcases the power of deep learning. 
+
+Keras makes the construction of the model extremely simple, putting the programmer focus on engineering the solution and working with the data - versus getting lost in the weeds of building the correct model. 
+
+And lastly, it is all about the data. Garbage in, garbage out. I suspect that multiple models can get a reasonable level of accuracy, but without the right data (right content, right normalization, right randomization) etc the models wont be very useful.
 
 ##Acknowledgements 
 

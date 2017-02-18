@@ -1,6 +1,8 @@
 
 **Video Summary**
+
 Watch this video for the final outcome of this project! 
+
 https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/run2.mp4
 
 **The Project**

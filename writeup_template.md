@@ -56,8 +56,21 @@ My Keras model looks like this:
    model.add(Dense(1))
 ```
 
----
-###Files Submitted & Code Quality
+##Optimization
+
+The model uses Adam optimizer and MSE loss functions. The dropout layers were set to 10% to control overfitting. 
+
+##Preprocessing - Images
+
+I focused initially on building the simplest model that can handle Track1.
+
+The images were cropped 70 pixels from the top, and 25 pixels from the bottom to keep just the main features of the road. I made a note of several other steps that one could do at this stage (color/RGB processing, grayscaling, brightness/contrast adjustments, resizing, rotations) I left the pictures as is. Only the center camera images were used
+
+##Preprocessing - Steering Angles
+
+T
+
+
 
 ####1. Submission includes all required files and can be used to run the simulator in autonomous mode
 

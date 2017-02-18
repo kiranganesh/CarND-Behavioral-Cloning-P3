@@ -92,8 +92,9 @@ With this relatively simple model, the car seems to do a good job (albeit going 
 
 The model did not work well on Track2. One obvious enhancement that I need to make in the training is to account for the slopes and uneven horizons. This could be achieved by adding a few random rotational deltas to the image. I plan to tackle this as a separate challenge aside from the submission.
 
-The main learning I have from this exercise is that developing models 
+##Commentary
 
+It was immensely satisfying to build a simple deep learning model that could drive the simulator car on its own. Its a really different paradigm (versus the robotic model) that showcases the power of deep learning. Keras makes the construction of the model extremely simple, putting the programmer focus on the model intuition itself. And it is all about the data. Garbage in, garbage out. 
 
 ##Acknowledgements 
 

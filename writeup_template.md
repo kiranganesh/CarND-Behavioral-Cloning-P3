@@ -58,11 +58,13 @@ My Keras model looks like this:
 
 ##Optimization
 
-The model uses Adam optimizer and MSE loss functions. The dropout layers were set to 10% to control overfitting. 
+The model uses Adam optimizer (so no manual tuning of the learning rate) and MSE loss functions. The dropout layers were set to 10% to control overfitting. 
 
 ##Preprocessing - Images
 
 I focused initially on building the simplest model that can handle Track1.
+
+The training data was taken from the Udacity provided dataset. I also created my own custom dataset and tried separate runs with it. One thing I learned from this exercise was that your driving style can result in significantly different training sets (do ou consistently create small steering adjustments, or do you create infrequent, larger steering adjustments etc)
 
 The images were cropped 70 pixels from the top, and 25 pixels from the bottom to keep just the main features of the road. I made a note of several other steps that one could do at this stage (color/RGB processing, grayscaling, brightness/contrast adjustments, resizing, rotations) I left the pictures as is. Only the center camera images were used
 
@@ -80,41 +82,9 @@ After the above mentioned steps, the distribution of data looks like this
 
 ![Image](https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/images/pic1.JPG)
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+Clearly, there is an over-concentration of values around the 0 angle of steering. This needs to be addressed and the data needs to be made more balanced. After reducing the overrepresented class the balanced data set looks like this:
 
-My project includes the following files:
-* model.py containing the script to create and train the model
-* drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
-
-####2. Submission includes functional code
-Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
-```sh
-python drive.py model.h5
-```
-
-####3. Submission code is usable and readable
-
-The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
-
-###Model Architecture and Training Strategy
-
-####1. An appropriate model architecture has been employed
-
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
-
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
-
-####2. Attempts to reduce overfitting in the model
-
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
-
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
-
-####3. Model parameter tuning
-
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+![Image](https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/images/pic1.JPG)
 
 ####4. Appropriate training data
 

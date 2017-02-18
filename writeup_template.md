@@ -70,7 +70,15 @@ The images were cropped 70 pixels from the top, and 25 pixels from the bottom to
 
 A steering angle of 0.5 from the training run doesnt mean that a value of 0.49 or 0.52 is "incorrect" - probably they all can still do the required job done. So I added a random variation of +/- 10% to the steering angles. This makes the model more general and helps to reduce overfitting to precise values from the training set. 
 
+##Data Augmentation - Images
 
+Inorder to reduce the bias to left turns, all images were flipped (as well as their steering angles reversed) and added to the database. This doubles the number of data points in the training set and makes the data also more generalized.
+
+##Data Normalization
+
+After the above mentioned steps, the distribution of data looks like this
+
+![Image](./images/pic1)
 
 ####1. Submission includes all required files and can be used to run the simulator in autonomous mode
 

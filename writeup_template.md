@@ -17,20 +17,44 @@ The goals / steps of this project are the following:
 ##Files
 
 The main files for this submission are model.py, model.h5, run2.mp4 and writeup_template.md
+```sh
+model.py
+model.h5
+run2.mp4
+writeup_report.md
+```
 
+Using the drive.py and the beta_simulator provided by Udacity, the car can be driven autonomously by executing
+```sh
+python drive.py model.h5
+```
+##Model Architecture 
 
-[//]: # (Image References)
+I used the nVidia End-to-End Deep Learning Network for my model. (However, I kept the image sizes to be the same as what came out of the simulator and did not resize it to match what was published in the original nVidia model)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+My Keras model looks like this:
 
-## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
+```sh
+   model = Sequential()
+   model.add(Lambda(lambda x: x/255.0 - 0.5, input_shape=(160,320,3)))
+   model.add(Cropping2D(cropping=((70,25),(0,0)))) # 65 x 320
+
+   model.add(Convolution2D(24,5,5,name='Conv1',subsample=(2,2),activation='relu'))
+   model.add(Convolution2D(36,5,5,name='Conv2',subsample=(2,2),activation='relu'))
+   model.add(Convolution2D(48,5,5,name='Conv3',subsample=(2,2),activation='relu'))
+   model.add(Convolution2D(64,3,3,name='Conv4',subsample=(1,1),activation='relu'))
+   model.add(Convolution2D(64,3,3,name='Conv5',subsample=(1,1),activation='relu'))
+   
+   model.add(Flatten())
+   model.add(Dense(1164))
+   model.add(Dropout(DROPOUT))
+   model.add(Dense(100))
+   model.add(Dropout(DROPOUT))
+   model.add(Dense(50))
+   model.add(Dropout(DROPOUT))
+   model.add(Dense(10))
+   model.add(Dense(1))
+```
 
 ---
 ###Files Submitted & Code Quality

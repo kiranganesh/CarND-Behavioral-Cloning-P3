@@ -88,17 +88,17 @@ Clearly, there is an over-concentration of values around the 0 angle of steering
 
 ##Results
 
-With this relatively simple model, the car seems to do a good job (albeit going around a few curves that were "too close" for comfort) in going around Track1.
+With this relatively simple model, the car did a decent job of going around Track1 for multiple laps. Occasionally the driving around sharp curves were a bit "too close" for comfort but the car stayed on the road. One improvement to make in the future would be to make the driving more centered even around curves.
 
-The model did not work well on Track2. One obvious enhancement that I need to make in the training is to account for the slopes and uneven horizons. This could be achieved by adding a few random rotational deltas to the image. I plan to tackle this as a separate challenge aside from the submission.
+The model however did not work well on Track2. One obvious enhancement that I need to make in the training is to account for the sloping roads and uneven horizons. I plan to tackle this as a separate challenge aside from the submission.
 
 ##Commentary
 
-It was immensely satisfying to build a simple deep learning model that could drive the simulator car on its own. Its a really different paradigm (versus the robotic model) that showcases the power of deep learning. 
+It was immensely satisfying to build a simple deep learning model that could drive the simulator car on its own. This example shows the power of convolutional neural networks and how effective they can be. This new paradigm of teaching cars to drive (compared to the robotic model) really showcases the power of deep learning. 
 
-Keras makes the construction of the model extremely simple, putting the programmer focus on engineering the solution and working with the data - versus getting lost in the weeds of building the correct model. 
+After having gone through the Traffic Sign recognition exercise with Tensorflow, Keras was a real pleasure to work with. Keras makes the construction of the model extremely simple, putting the programmer focus on engineering the solution and working with the data - versus getting lost in the weeds of building the correct model. 
 
-And lastly, it is all about the data. Garbage in, garbage out. I suspect that multiple models can get a reasonable level of accuracy, but without the right data (right content, right normalization, right randomization) etc the models wont be very useful.
+And lastly, the biggest learning is that its all about the data. Garbage in, garbage out. I suspect that multiple models can get a reasonable level of accuracy, but without the right data (right content, right normalization, right randomization) etc the models wont be very useful.
 
 ##Acknowledgements 
 

@@ -3,6 +3,8 @@
 
 Watch this video for the final outcome of this project! 
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6uKrz9iPvY4/0.jpg)](https://www.youtube.com/embed/6uKrz9iPvY4)
+
 <iframe width="854" height="480" src="https://www.youtube.com/embed/6uKrz9iPvY4" frameborder="0" allowfullscreen></iframe>
 
 ##The Project

@@ -3,7 +3,7 @@
 
 Watch this video for the final outcome of this project! 
 
-https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/run2.mp4
+<iframe width="854" height="480" src="https://www.youtube.com/embed/6uKrz9iPvY4" frameborder="0" allowfullscreen></iframe>
 
 ##The Project
 
@@ -87,6 +87,10 @@ Clearly, there is an over-concentration of values around the 0 angle of steering
 ![Image](https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/images/pic2.JPG)
 
 ##Results
+
+The model was relatively quick to train on AWS GPU insances
+
+![Image](https://github.com/kiranganesh/CarND-Behavioral-Cloning-P3/blob/master/images/pic3.JPG)
 
 With this relatively simple model, the car did a decent job of going around Track1 for multiple laps. Occasionally the driving around sharp curves were a bit "too close" for comfort but the car stayed on the road. One improvement to make in the future would be to make the driving more centered even around curves.
 
